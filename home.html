@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <div class="preload">
+      <div class="loader">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+      <div class="loader">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+      <div class="loader">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <section>
+      <div class="header">
+      <a href="index.html" onclick="gb()" style=" text-decoration: none;">
+  
+        
+      <div class="button-container" id="myButton">
+        <div class="button-icon-container">
+            <img src="img/left.svg" style="width: 40px; height: 40px"
+          />
+        </div>
+        <div class="button-text-container">
+          <span>Return</span>
+        </div>
+      </div>
+
+  </a>
+
+      <div id="topic"></div>
+      </div>
+      <div>
+        <button class="button" id="onep">L1</button>
+        <button class="button" id="two">L2</button>
+        <button class="button" id="threep">L3</button>
+        <button class="button" id="four">L4</button>
+        <button class="button" id="five">L5</button>
+      </div>
+      <div id="results"></div>
+      <div id="lvl">
+        <button onclick="green()" class="button button1">Right</button>
+        <button onclick="red()" class="button button2">Wrong</button>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

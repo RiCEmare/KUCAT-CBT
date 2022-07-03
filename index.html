@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <div class="preload">
+      <div class="loader">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+      <div class="loader">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+      <div class="loader">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <section>
+      <div id="myModalR" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="xR()">&times;</span>
+          <p style="margin: 40px 40px 100px 40px;">Are you Sure you want to restart the test?</p>
+          <button class="button4" id="yes" onclick="reset()"><span>Yes</span></button>
+        <button class="button4" id="cancel"><span>Cancel</span></button>
+        </div>
+      </div>
+
+      <div id="myModalI" class="modal">
+        <div class="modal-content">
+          <span class="close" onclick="xI()">&times;</span>
+          <img src="img/ins.png" style=" width: 850px;height: 500px;">
+        </div>
+      </div>
+      <div class="header">
+        <div class="dropdown">
+          <div class="button-container menu" id="myButton">
+            <div class="button-icon-container">
+              <a href="#" onclick="gb()"
+                ><img src="img/settings.svg" style="width: 40px; height: 40px"
+              /></a>
+            </div>
+
+            <div class="button-text-container">
+              <span>Menu</span>
+            </div>
+          </div>
+          <div class="dropdown-content" id="dc">
+            <a href="#" id="myBtnR">Restart</a>
+            <a href="#" id="myBtnI">Instructions</a>
+          </div>
+        </div>
+
+        <div id="sub">Select Your Subject:</div>
+      </div>
+      <div class="ani" id="anis">
+        <a href="home.html" class="subs" onclick="physics()" id="sphy"
+          >Physics</a
+        >
+        <a href="home.html" class="subs" onclick="maths()" id="smth">Maths</a>
+        <a href="home.html" class="subs" onclick="chemistry()" id="schm"
+          >Chemistry</a
+        >
+      </div>
+      <div>
+        <button onclick="sub()" class="button button3" id="finalsub">Submit</button>
+      </div>
+      <div id="finals">
+        <div id="fscore"></div><br><br>
+        <div<button class="button4" onclick="reset()"><span>Retake Test</span></button>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
